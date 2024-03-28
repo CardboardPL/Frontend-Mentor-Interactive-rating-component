@@ -15,35 +15,51 @@
   </style>
 </head>
 <body>
+  <main>
+    <article>
+      <!-- Rating state start -->
+      <form method="POST" action="#" class="rating-section">
+        <img src="./images/icon-star.svg" alt="Star Icon">
 
-  <!-- Rating state start -->
+        <h2>How did we do?</h2>
 
-  How did we do?
+        <fieldset>
+          <legend>Please let us know how we did with your support request. All feedback is appreciated 
+            to help us improve our offering!</legend>
+          
+          <input type="radio" name="offering-feedback" id="rate-1">
+          <label for="rate-1">1</label>
+          <input type="radio" name="offering-feedback" id="rate-2">
+          <label for="rate-2">2</label>
+          <input type="radio" name="offering-feedback" id="rate-3">
+          <label for="rate-3">3</label>
+          <input type="radio" name="offering-feedback" id="rate-4">
+          <label for="rate-4">4</label>
+          <input type="radio" name="offering-feedback" id="rate-5">
+          <label for="rate-5">5</label>
+        </fieldset>
 
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
+        <button type="submit" class="submit">Submit</button>
+      </form>
+      <!-- Rating state end -->
 
-  1 2 3 4 5
-
-  Submit
-
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
+      <!-- Thank you state start -->
+      <section aria-hidden="true" class="thank-you-section">
+        <img src="./images/illustration-thank-you.svg" alt="Thank You Illustration">
+        <p>You selected <span id="rating"></span> out of 5</p>
+        <h2>Thank you!</h2>
+        <p>We appreciate you taking the time to give a rating. If you ever need more support, 
+          don’t hesitate to get in touch!</p>
+      </section>
+      <!-- Thank you state end -->
+    </article>
+  </main>
+  
 
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <footer class="attribution">
+    Challenge by <a rel="noopener noreferrer" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a rel="noopener noreferrer" href="https://github.com/CardboardPL">CardboardPL</a>.
+  </footer>
 </body>
 </html>
