@@ -1,13 +1,14 @@
 .rating-component {
   position: relative;
   background-color: hsla(213, 19%, 18%, 0.9);
+  min-width: 18rem;
   width: 90%;
-  max-width: 450px;
-  height: 410px;
-  padding: 32px;
-  border-radius: 20px;
+  max-width: 30rem;
+  height: 27.33333333333333rem;
+  padding: 2.133333333333333rem;
+  border-radius: 1.333333333333333rem;
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 1.333333333333333rem;
   overflow: hidden;
 }
 
@@ -19,13 +20,13 @@
 .rating-component h2 {
   font-size: 1.85rem;
   color: hsl(0, 0%, 100%);
-  margin: 34px 0 10px 0;
+  margin: 2.266666666666667rem 0 0.6666666666666667rem 0;
 }
 
 .rating-section > img {
   display: block;
   background-color: hsla(216, 12%, 54%, 0.1);
-  padding: 16px;
+  padding: 1.066666666666667rem;
   border-radius: 50%;
 }
 
@@ -37,9 +38,9 @@
 .rating-section fieldset > div {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 1.333333333333333rem;
 
-  margin: 24px 0;
+  margin: 1.6rem 0;
 }
 
 input[name="offering-feedback"] {
@@ -53,8 +54,8 @@ label[for^="rate"] {
   font-weight: 700;
   position: relative;
   display: block;
-  height: 52px;
-  width: 52px;
+  height: 3.466666666666667rem;
+  width: 3.466666666666667rem;
   border-radius: 50%;
   background-color: hsla(216, 12%, 54%, 0.1);
   cursor: pointer;
@@ -86,10 +87,10 @@ button[type="submit"] {
   font-weight: 700;
   color: hsl(0, 0%, 100%);
   background-color: hsl(25, 97%, 53%);
-  height: 50px;
+  height: 3.333333333333333rem;
   width: 100%;
   border: none;
-  border-radius: 50px;
+  border-radius: 3.333333333333333rem;
   cursor: pointer;
   transition: all 0.15s ease-in-out;
 }
@@ -107,11 +108,11 @@ button[type="submit"]:hover {
 .thank-you-section > img {
   display: block;
   margin: 0 auto;
-  margin-top: 12px;
+  margin-top: 0.8rem;
 }
 
 .thank-you-section > h2 {
-  margin-bottom: 16px;
+  margin-bottom: 1.066666666666667rem;
 }
 
 .selectedRating {
@@ -119,13 +120,13 @@ button[type="submit"]:hover {
   display: inline-block;
   color: hsl(25, 97%, 53%);
   background-color: hsla(216, 12%, 54%, 0.1);
-  height: 32px;
-  width: 187px;
-  border-radius: 16px;
-  margin-top: 34px;
+  height: 2.133333333333333rem;
+  width: 12.46666666666667rem;
+  border-radius: 1.066666666666667rem;
+  margin-top: 2.266666666666667rem;
 }
 
 .selectedRating > span {
   display: inline-block;
-  margin-top: 8px;
+  margin-top: 0.5333333333333333rem;
 }

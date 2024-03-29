@@ -20,3 +20,9 @@ body {
   min-height: 100vh;
   margin: 0;
 }
+
+@media (max-width: 450px) {
+  html {
+    font-size: 0.875rem;
+  }
+}
