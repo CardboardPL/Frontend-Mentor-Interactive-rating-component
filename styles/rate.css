@@ -98,5 +98,6 @@ button[type="submit"]:hover {
 }
 
 .thank-you-section {
+  text-align: center;
   display: none;
 }
