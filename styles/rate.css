@@ -1,0 +1,102 @@
+.rating-component {
+  position: relative;
+  background-color: hsla(213, 19%, 18%, 0.9);
+  max-width: 415px;
+  height: 410px;
+  padding: 32px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.rating-component > * {
+  width: 100%;
+  height: 100%;
+}
+
+.rating-component h2 {
+  font-size: 1.85rem;
+  color: hsl(0, 0%, 100%);
+  margin: 34px 0 10px 0;
+}
+
+.rating-section > img {
+  display: block;
+  background-color: hsla(216, 12%, 54%, 0.1);
+  padding: 16px;
+  border-radius: 50%;
+}
+
+.rating-section fieldset {
+  line-height: 1.5;
+  border: none;
+}
+
+.rating-section fieldset > div {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+
+  margin: 24px 0;
+}
+
+input[name="offering-feedback"] {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+label[for^="rate"] {
+  font-size: 1.1rem;
+  font-weight: 700;
+  position: relative;
+  display: block;
+  height: 52px;
+  width: 52px;
+  border-radius: 50%;
+  background-color: hsla(216, 12%, 54%, 0.1);
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.15s ease-in-out;
+}
+
+label[for^="rate"] > span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+label[for^="rate"]:hover,
+input[name="offering-feedback"]:focus + label[for^="rate"] {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+}
+
+input[name="offering-feedback"]:checked + label[for^="rate"] {
+  background-color: hsl(217, 12%, 63%);
+  color: hsl(0, 0%, 100%);
+}
+
+button[type="submit"] {
+  letter-spacing: 2px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(25, 97%, 53%);
+  height: 50px;
+  width: 100%;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+}
+
+button[type="submit"]:hover {
+  background-color: white;
+  color: hsl(25, 97%, 53%);
+}
+
+.thank-you-section {
+  display: none;
+}
