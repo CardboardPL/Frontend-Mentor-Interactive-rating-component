@@ -12,8 +12,12 @@ submitBtn.addEventListener('click', event => {
     return
   }
 
+  formElem.setAttribute('aria-hidden', 'true');
   formElem.style.display = "none";
+  
+  thankYouSectionElem.removeAttribute('aria-hidden');
   thankYouSectionElem.style.display = "block";
+
   selectedRatingElem.innerText = selectedElem.value;
 })
 
