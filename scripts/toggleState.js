@@ -1,15 +1,15 @@
 const submitBtn = document.querySelector('#submitBtn');
 const formElem = document.querySelector('.rating-component > form');
 const thankYouSectionElem = document.querySelector('.thank-you-section');
-const selectedRatingElem = document.querySelector('#rating')
+const selectedRatingElem = document.querySelector('#rating');
 
 submitBtn.addEventListener('click', event => {
   event.preventDefault();
 
-  const selectedElem = document.querySelector('input[name="offering-feedback"]:checked')
+  const selectedElem = document.querySelector('input[name="offering-feedback"]:checked');
   
   if (selectedElem.value.length === 0) {
-    return
+    return;
   }
 
   formElem.setAttribute('aria-hidden', 'true');
@@ -19,5 +19,5 @@ submitBtn.addEventListener('click', event => {
   thankYouSectionElem.style.display = "block";
 
   selectedRatingElem.innerText = selectedElem.value;
-})
+});
 
