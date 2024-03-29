@@ -1,0 +1,22 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 0.9375rem;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  font-family: Overpass, Arial, Helvetica, sans-serif;
+  color: hsl(216, 12%, 54%);
+  background-color: hsl(216, 12%, 8%);
+  min-height: 100vh;
+  margin: 0;
+}
