@@ -1,10 +1,10 @@
 .rating-component {
   position: relative;
   background-color: hsla(213, 19%, 18%, 0.9);
-  min-width: 18rem;
+  min-width: 27rem;
   width: 90%;
   max-width: 30rem;
-  height: 27.33333333333333rem;
+  min-height: 27.33333333333333rem;
   padding: 2.133333333333333rem;
   border-radius: 1.333333333333333rem;
   margin: 0 auto;
@@ -31,6 +31,7 @@
 }
 
 .rating-section fieldset {
+  min-width: 0;
   line-height: 1.5;
   border: none;
 }
@@ -129,4 +130,20 @@ button[type="submit"]:hover {
 .selectedRating > span {
   display: inline-block;
   margin-top: 0.5333333333333333rem;
+}
+
+@media (max-width: 450px) {
+  .rating-component {
+    font-size: 1.090909090909091rem;
+    min-height: 29.363636364rem;
+  }
+
+  .rating-component h2 {
+    font-size: calc(1.85rem + 3px);
+    margin: 2.53939393939394rem 0 0.9393939393939394rem 0;
+  }
+
+  .rating-section fieldset > div {
+    margin: 1.872727272727273rem 0;
+  }
 }
