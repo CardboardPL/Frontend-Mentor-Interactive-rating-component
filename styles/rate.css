@@ -146,4 +146,9 @@ button[type="submit"]:hover {
   .rating-section fieldset > div {
     margin: 1.872727272727273rem 0;
   }
+
+  .selectedRating {
+    height: 2.224242424242424rem;
+    width: 13.1939393939394rem;
+  }
 }
